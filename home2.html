@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        body{
+            background: url(HD-Abstract-Backgrounds.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+        }
+        .table{
+            width:47%;
+            background:rgba(12, 12, 46, 0.641);
+            margin:50px auto;
+            box-shadow: 0 0 30px black;
+            border-radius:50px;  
+        }
+       h2{
+            /* width: 100%; */
+            /* background:rgba(12, 12, 47, 0.66); */
+            border-radius: 50px;
+            color:rgba(255, 255, 255, 0.496);
+          
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0 0 10px 0;
+        }
+        .row{
+            padding: 5px 0 5px 0;
+            display: flex;
+           
+        }
+         .row .col{
+            width: 25%;
+            
+            padding: 5px 0 0 0;
+            color:rgba(255, 255, 255, 0.496);
+           
+        }
+        .row .col1 .input1{
+            height: 28px;
+            width:80%;
+
+        }
+        .row .first{
+            padding:0 0 10px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            /* border: 1px solid; */
+            
+        }
+        .row .col1{
+            width: 75%;
+            padding:5px 0 0 0;
+            color:rgba(255, 255, 255, 0.496);
+            font-size:15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            word-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .table .dis{
+            height: 35px;
+            width: 350px;
+          margin: 0 0 0 250px;
+            /* margin: 20px 0 100px 130px; */
+           
+        }
+        .table .dis .submit1{
+            height: 35px;
+            width:80%;
+            background: rgba(130, 52, 186, 0.896);
+            color:rgba(255, 255, 255, 0.496);
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.432);
+            
+            /* border: 1px solid transparent; */
+        }
+
+        @media only screen and (max-width:500px){
+            .row .col{width: 100%;}
+            .row .input1{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="table">
+        <h2><u>Student Registration Form</u></h2>
+
+      
+        <div class="row">
+            <div class="col first"><label>First name:</label></div>
+            <div class="col col1"><input type="text" placeholder="Enter your first name" title="only letters..!" required pattern="[a-zA-Z]+" class="input1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label>Last Name:</label></div>
+            <div class="col col1"><input type="text" placeholder="Enter your last name" title="only letters..!" required pattern="[a-zA-Z]+" class="input1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label for="">Email:</label></div>
+            <div class="col col1"> <input type="email" placeholder="it should contain @" class="input1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label for="">Mobile no:</label></div>
+            <div class="col col1"><input type="digit" placeholder="only 10 digit allowed" class="input1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label for="">Gender:</label></div>
+            <div class="col col1"><input type="radio" name="gender" id="">male
+                <input type="radio" name="gender" id="">female</div>
+        </div>
+
+        <div class="row">
+            <div class="col first"><label for="">Date Of Birth:</label></div>
+            <div class="col col1"><input type="datetime-local" class="input1"></div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col first"><label for="">Address:</label></div>
+            <div class="col col1"><textarea rows="10" cols="50" class="input1"></textarea></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label>City:</label></div>
+            <div class="col col1"><input type="text" class="input1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col first"><label>Area PIN:</label></div>
+            <div class="col col1"><input type="digit" class="input1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col first"><label>State:</label></div>
+            <div class="col col1"><input type="text" class="input1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col first"><label>Qualification:</label></div>
+            <div class="col col1"> <select>
+                <option hidden>Select Qualification</option>
+                <option>10th Pass</option>
+                <option>12th Pass</option>
+                <option>Bachelor Degree</option>
+                <option>Master Degree</option>
+            </select></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label>Specialization:</label></div>
+            <div class="col col1"><input type="checkbox">Computer Science<br>
+                <input type="checkbox">Information Technology<br>
+                <input type="checkbox">Computer Architecture<br>
+                <input type="checkbox">Tele Communication</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col first"><label>Password:</label></div>
+            <div class="col col1"><input type="password" class="input1"></div>
+        </div>
+
+        <div class="dis"><input type="submit" value="submit" name="submit" class="submit1"></div>
+    </div>
+
+</body>
+</html>
